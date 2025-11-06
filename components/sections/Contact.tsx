@@ -11,15 +11,42 @@ export default function Contact() {
     message: "",
   });
 
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus("success");
-    setTimeout(() => {
-      setFormData({ name: "", email: "", message: "" });
-      setStatus("idle");
-    }, 3000);
+    setStatus("loading");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Erro ao enviar mensagem");
+      }
+
+      setStatus("success");
+      setTimeout(() => {
+        setFormData({ name: "", email: "", message: "" });
+        setStatus("idle");
+      }, 5000);
+    } catch (error) {
+      setStatus("error");
+      setErrorMessage(error instanceof Error ? error.message : "Erro ao enviar mensagem");
+      setTimeout(() => {
+        setStatus("idle");
+        setErrorMessage("");
+      }, 5000);
+    }
   };
 
   const handleChange = (
@@ -161,9 +188,10 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-gradient-to-r from-primary-600 to-accent-600 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+                disabled={status === "loading"}
+                className="w-full px-6 py-3 bg-gradient-to-r from-primary-600 to-accent-600 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
-                Enviar Mensagem
+                {status === "loading" ? "Enviando..." : "Enviar Mensagem"}
               </button>
 
               {status === "success" && (
@@ -173,6 +201,16 @@ export default function Contact() {
                   className="text-green-600 dark:text-green-400 text-center font-medium"
                 >
                   Mensagem enviada com sucesso!
+                </motion.p>
+              )}
+
+              {status === "error" && (
+                <motion.p
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="text-red-600 dark:text-red-400 text-center font-medium"
+                >
+                  {errorMessage}
                 </motion.p>
               )}
             </form>
