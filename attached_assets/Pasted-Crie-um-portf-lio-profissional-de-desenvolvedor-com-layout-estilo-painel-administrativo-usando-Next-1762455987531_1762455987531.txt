@@ -1,0 +1,57 @@
+Crie um portfólio profissional de desenvolvedor com layout estilo painel administrativo, usando Next.js e TailwindCSS.
+
+🧩 Requisitos de layout:
+- Menu lateral fixo à esquerda (sidebar).
+- Conteúdo principal à direita.
+- Design escuro e moderno.
+- Ícones nos itens do menu.
+- Layout responsivo (menu recolhe em telas pequenas).
+
+📂 Estrutura:
+1. **Sidebar** (lado esquerdo):
+   - Foto/avatar no topo.
+   - Nome e título do desenvolvedor.
+   - Itens de navegação:
+     - Home
+     - Sobre mim
+     - Habilidades
+     - Projetos
+     - Contato
+   - Ícones ao lado dos nomes (use Lucide ou Heroicons).
+
+2. **Main Content** (lado direito):
+   - Cada seção deve ser carregada sem recarregar a página (SPA-style).
+   - Transições suaves entre seções (Framer Motion ou animações CSS).
+   - Fundo claro no conteúdo para contraste com o menu escuro.
+
+3. **Design e estilo:**
+   - Paleta: tons de cinza, roxo e azul.
+   - Tipografia moderna e limpa.
+   - Bordas arredondadas e sombras suaves.
+   - Scroll suave entre seções.
+
+4. **Seções do conteúdo:**
+   - **Home:** apresentação com nome, cargo e pequeno resumo.
+   - **Sobre mim:** breve descrição da trajetória e foco profissional.
+   - **Habilidades:** grid com ícones (HTML, CSS, JS, React, Node, etc.).
+   - **Projetos:** cards com imagem, título, descrição e botões (demo / GitHub).
+   - **Contato:** formulário com nome, e-mail, mensagem (simulado ou com EmailJS).
+
+5. **Extras:**
+   - Dark/light mode.
+   - SEO básico (metatags, título dinâmico).
+   - Rodapé simples com links para LinkedIn, GitHub e email.
+
+6. **Organização do código:**
+   - Componentes reutilizáveis: Sidebar, Navbar (se usada), CardProjeto, SkillBadge, Footer.
+   - Estrutura limpa em `components/` e `pages/`.
+
+7. **Instruções finais:**
+   - Forneça os comandos para rodar o projeto:
+     ```
+     npm install
+     npm run dev
+     ```
+   - Código pronto para deploy na Vercel.
+
+O objetivo é um portfólio que tenha aparência de painel profissional, com menu lateral fixo e transições suaves entre seções.
