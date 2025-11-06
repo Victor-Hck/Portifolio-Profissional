@@ -2,11 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['images.unsplash.com'],
+    domains: ['avatars.githubusercontent.com'],
   },
-  experimental: {
-    allowedDevOrigins: ['*'],
-  },
+  experimental: {},
 };
 
 export default nextConfig;

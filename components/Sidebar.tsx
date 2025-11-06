@@ -2,6 +2,7 @@
 
 import { Home, User, Code, Briefcase, Mail, X, Menu, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 interface SidebarProps {
@@ -53,11 +54,16 @@ export default function Sidebar({
       >
         <div className="flex flex-col h-full p-6">
           <div className="flex flex-col items-center mb-8 pt-12 lg:pt-0">
-            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary-400 to-accent-500 flex items-center justify-center mb-4 shadow-xl">
-              <span className="text-3xl font-bold">DEV</span>
+            <div className="relative w-24 h-24 rounded-full bg-gradient-to-br from-primary-400 to-accent-500 flex items-center justify-center mb-4 shadow-xl overflow-hidden">
+              <Image 
+                src="https://avatars.githubusercontent.com/u/157487572?v=4" 
+                alt="" 
+                fill
+                className="object-cover"
+                />
             </div>
-            <h2 className="text-xl font-bold text-center">Seu Nome</h2>
-            <p className="text-sm text-gray-400 text-center mt-1">Desenvolvedor Full Stack</p>
+            <h2 className="text-xl font-bold text-center">Victor Gomes</h2>
+            <p className="text-sm text-gray-400 text-center mt-1">Desenvolvedor Web Front End</p>
           </div>
 
           <nav className="flex-1 space-y-2">

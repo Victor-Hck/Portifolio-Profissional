@@ -9,11 +9,11 @@ export default function Skills() {
     { name: "JavaScript", level: 92, color: "bg-yellow-500" },
     { name: "TypeScript", level: 88, color: "bg-blue-600" },
     { name: "React", level: 90, color: "bg-cyan-500" },
-    { name: "Next.js", level: 85, color: "bg-gray-800" },
+    { name: "Next.js", level: 85, color: "bg-green-600" },
     { name: "Node.js", level: 87, color: "bg-green-600" },
     { name: "TailwindCSS", level: 93, color: "bg-teal-500" },
     { name: "Git", level: 89, color: "bg-red-500" },
-    { name: "PostgreSQL", level: 82, color: "bg-blue-700" },
+    { name: "MYSql", level: 50, color: "bg-blue-700" },
   ];
 
   const container = {
@@ -76,7 +76,7 @@ export default function Skills() {
           transition={{ delay: 0.5 }}
           className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4"
         >
-          {["Frontend", "Backend", "Database", "DevOps"].map((category) => (
+          {["Frontend", "Backend"].map((category) => (
             <div
               key={category}
               className="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow"

@@ -21,51 +21,13 @@ export default function About() {
           className="space-y-6 text-gray-600 dark:text-gray-300 text-lg"
         >
           <p className="leading-relaxed">
-            Sou um desenvolvedor full stack apaixonado por tecnologia e inovação.
-            Com experiência em criar soluções web modernas e escaláveis, trabalho
-            constantemente para transformar ideias em produtos digitais de alta qualidade.
+            Com 24 anos, sou um profissional entusiasta por tecnologia e com uma paixão genuína por tudo que a envolve.
+            ossuo uma forte inclinação para o estudo contínuo e dedico-me ativamente à atualização constante dos meus conhecimentos e habilidades. 
+            Acredito que a tecnologia avança rapidamente, e por isso, mantenho um ritmo de aprendizado ininterrupto para garantir que minhas competências estejam sempre alinhadas com as exigências e inovações do mercado de trabalho.
+            Minha dedicação em estudar continuamente não é apenas uma obrigação, mas uma motivação intrínseca para me qualificar e contribuir de forma significativa para os desafios e projetos das empresas. 
+            Estou sempre em busca de novas ferramentas, metodologias e tendências para aplicar na prática e agregar valor.
           </p>
 
-          <p className="leading-relaxed">
-            Minha jornada no desenvolvimento começou há alguns anos e desde então
-            tenho me dedicado a aprender e dominar as tecnologias mais recentes do
-            mercado. Acredito que a programação é uma forma de arte que permite
-            resolver problemas complexos de maneira criativa.
-          </p>
-
-          <p className="leading-relaxed">
-            Atualmente, foco em desenvolvimento web utilizando React, Next.js,
-            Node.js e outras tecnologias modernas. Sempre busco entregar código
-            limpo, bem estruturado e de fácil manutenção.
-          </p>
-
-          <div className="pt-6">
-            <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">
-              Experiência
-            </h3>
-            <div className="space-y-4">
-              <div className="border-l-4 border-primary-600 pl-4">
-                <h4 className="font-semibold text-gray-800 dark:text-white">
-                  Desenvolvedor Full Stack
-                </h4>
-                <p className="text-gray-500 dark:text-gray-400">2021 - Presente</p>
-                <p className="mt-2">
-                  Desenvolvimento de aplicações web modernas utilizando React,
-                  Next.js, Node.js e banco de dados PostgreSQL.
-                </p>
-              </div>
-              <div className="border-l-4 border-accent-600 pl-4">
-                <h4 className="font-semibold text-gray-800 dark:text-white">
-                  Desenvolvedor Frontend
-                </h4>
-                <p className="text-gray-500 dark:text-gray-400">2019 - 2021</p>
-                <p className="mt-2">
-                  Criação de interfaces responsivas e interativas com foco em
-                  experiência do usuário.
-                </p>
-              </div>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>

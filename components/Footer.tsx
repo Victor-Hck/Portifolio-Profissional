@@ -15,7 +15,7 @@ export default function Footer() {
 
           <div className="flex gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/Victor-Hck?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 hover:bg-gray-800 rounded-lg transition-colors"
@@ -24,7 +24,7 @@ export default function Footer() {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/victor-antônio-11596b218"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 hover:bg-gray-800 rounded-lg transition-colors"
@@ -33,7 +33,8 @@ export default function Footer() {
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:contato@exemplo.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=victor.profissional3592@gmail.com"
+              target="_blank"
               className="p-2 hover:bg-gray-800 rounded-lg transition-colors"
               aria-label="Email"
             >
