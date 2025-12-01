@@ -1,93 +1,164 @@
-"use client";
-
 import { motion } from "framer-motion";
+import { Badge } from "@/components/ui/badge";
+import {
+  SiReact,
+  SiNodedotjs,
+  SiTypescript,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiPostgresql,
+  SiMongodb,
+  SiGit,
+  SiDocker,
+  SiFigma,
+  SiPython,
+  SiPhp,
+  SiMysql,
+  SiSqlite,
+  SiGithub,
+  SiCplusplus,
+  SiGnubash,
+  SiZod,
+  SiReactquery,
+  
+} from "react-icons/si";
 
-export default function Skills() {
-  const skills = [
-    { name: "HTML5", level: 95, color: "bg-orange-500" },
-    { name: "CSS3", level: 90, color: "bg-blue-500" },
-    { name: "JavaScript", level: 92, color: "bg-yellow-500" },
-    { name: "TypeScript", level: 88, color: "bg-blue-600" },
-    { name: "React", level: 90, color: "bg-cyan-500" },
-    { name: "Next.js", level: 85, color: "bg-green-600" },
-    { name: "Node.js", level: 87, color: "bg-green-600" },
-    { name: "TailwindCSS", level: 93, color: "bg-teal-500" },
-    { name: "Git", level: 89, color: "bg-red-500" },
-    { name: "MYSql", level: 50, color: "bg-blue-700" },
-  ];
+const skillCategories = [
+  {
+    category: "Frontend",
+    skills: [
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+      { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
+      { name: "CSS3", icon: SiCss3, color: "#1572B6" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+      { name: "Next", icon: SiNextdotjs, color: "#06B6D4" }
+    ],
+  },
+  {
+    category: "Backend",
+    skills: [
+      { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+    //   { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+    //   { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+      { name: "Python", icon: SiPython, color: "#00FFFF" },
+      { name: "PHP", icon: SiPhp, color: "#00FFFF" },
+      { name: "MySql", icon: SiMysql, color: "#ffffff" },
+      { name: "SQLite", icon: SiSqlite, color: "#000000" },
+      { name: "C++", icon: SiCplusplus, color: "#fff"},
+      
+    ],
+  },
+  {
+    category: "Ferramentas",
+    skills: [
+      { name: "Git", icon: SiGit, color: "#F05032" },
+      { name: "GitHub", icon: SiGithub, color: "#000000" },
+      { name: "React Query", icon: SiReactquery, color: "#fff"},
+      { name: "Zod", icon: SiZod, color: "#fff"}
+    //   { name: "Docker", icon: SiDocker, color: "#2496ED" },
+    //   { name: "Figma", icon: SiFigma, color: "#F24E1E" },
+    ],
+  },
+];
 
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { x: -50, opacity: 0 },
-    show: { x: 0, opacity: 1 },
-  };
-
+export default function SkillsSection() {
   return (
-    <section className="min-h-screen p-8 md:p-16 bg-gray-50 dark:bg-gray-800">
-      <div className="max-w-4xl mx-auto">
-        <motion.h2
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          className="text-4xl md:text-5xl font-bold mb-12 text-gray-800 dark:text-white"
-        >
-          Habilidades
-        </motion.h2>
-
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.4 }}
+      className="min-h-screen flex items-center justify-center p-8"
+    >
+      <div className="max-w-6xl w-full space-y-12">
         <motion.div
-          variants={container}
-          initial="hidden"
-          animate="show"
-          className="space-y-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.4 }}
         >
-          {skills.map((skill) => (
-            <motion.div key={skill.name} variants={item} className="space-y-2">
-              <div className="flex justify-between items-center">
-                <span className="font-semibold text-gray-700 dark:text-gray-200">
-                  {skill.name}
-                </span>
-                <span className="text-gray-500 dark:text-gray-400">
-                  {skill.level}%
-                </span>
-              </div>
-              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
-                <motion.div
-                  initial={{ width: 0 }}
-                  animate={{ width: `${skill.level}%` }}
-                  transition={{ duration: 1, delay: 0.2 }}
-                  className={`h-full ${skill.color} rounded-full`}
-                />
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Habilidades</h2>
+          <p className="text-lg text-muted-foreground">
+            Tecnologias e ferramentas que domino para criar soluções completas
+          </p>
+        </motion.div>
+
+        <div className="space-y-12">
+          {skillCategories.map((category, categoryIndex) => (
+            <motion.div
+              key={category.category}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 + categoryIndex * 0.1, duration: 0.4 }}
+              className="space-y-6"
+            >
+              <h3 className="text-2xl font-semibold">{category.category}</h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                {category.skills.map((skill, index) => (
+                  <motion.div
+                    key={skill.name}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      delay: 0.4 + categoryIndex * 0.1 + index * 0.05,
+                      duration: 0.3,
+                    }}
+                    whileHover={{ scale: 1.05 }}
+                    className="group"
+                    data-testid={`skill-${skill.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  >
+                    <div className="bg-card border border-card-border rounded-lg p-6 flex flex-col items-center justify-center gap-3 h-32 hover-elevate active-elevate-2 transition-transform">
+                      <skill.icon
+                        className="h-10 w-10 transition-colors"
+                        style={{ color: skill.color }}
+                      />
+                      <p className="text-sm font-medium text-center">
+                        {skill.name}
+                      </p>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
 
         <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.4 }}
+          className="pt-8"
         >
-          {["Frontend", "Backend"].map((category) => (
-            <div
-              key={category}
-              className="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow"
-            >
-              <h3 className="font-bold text-lg text-gray-800 dark:text-white">
-                {category}
-              </h3>
-            </div>
-          ))}
+          {/* <h3 className="text-xl font-semibold mb-4">Outras Competências</h3> */}
+          <div className="flex flex-wrap gap-2">
+            {[
+            //   "REST APIs",
+            //   "GraphQL",
+            //   "Responsive Design",
+            //   "Agile/Scrum",
+            //   "CI/CD",
+            //   "Testing",
+            //   "Performance Optimization",
+            //   "SEO",
+            ].map((skill, index) => (
+              <motion.div
+                key={skill}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.9 + index * 0.05, duration: 0.2 }}
+              >
+                <Badge variant="secondary" className="text-sm px-3 py-1">
+                  {skill}
+                </Badge>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
-    </section>
+    </motion.div>
   );
 }

@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <span className="text-gray-400">Feito com</span>
             <Heart size={18} className="text-red-500 fill-red-500" />
-            <span className="text-gray-400">por Desenvolvedor</span>
+            <span className="text-gray-400">por Victor Gomes</span>
           </div>
 
           <div className="flex gap-4">
