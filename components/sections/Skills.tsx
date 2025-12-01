@@ -133,7 +133,7 @@ export default function SkillsSection() {
           transition={{ delay: 0.8, duration: 0.4 }}
           className="pt-8"
         >
-          {/* <h3 className="text-xl font-semibold mb-4">Outras Competências</h3> */}
+          <h3 className="text-xl font-semibold mb-4">Outras Competências</h3>
           <div className="flex flex-wrap gap-2">
             {[
             //   "REST APIs",

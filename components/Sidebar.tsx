@@ -29,7 +29,7 @@ export default function Sidebar({
     { id: "home", label: "Home", icon: Home },
     { id: "about", label: "Sobre Mim", icon: User },
     { id: "skills", label: "Habilidades", icon: Code },
-    // { id: "projects", label: "Projetos", icon: Briefcase },
+    { id: "projects", label: "Projetos", icon: Briefcase },
     { id: "contact", label: "Contato", icon: Mail },
   ];
 
