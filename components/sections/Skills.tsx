@@ -138,7 +138,7 @@ export default function SkillsSection() {
             {[
             //   "REST APIs",
             //   "GraphQL",
-            //   "Responsive Design",
+              "Responsive Design",
             //   "Agile/Scrum",
             //   "CI/CD",
             //   "Testing",
