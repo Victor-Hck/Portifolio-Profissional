@@ -22,7 +22,7 @@ export default function About() {
         >
           <p className="leading-relaxed">
             Com 24 anos, sou um profissional entusiasta por tecnologia e com uma paixão genuína por tudo que a envolve.
-            ossuo uma forte inclinação para o estudo contínuo e dedico-me ativamente à atualização constante dos meus conhecimentos e habilidades. 
+            Possuo uma forte inclinação para o estudo contínuo e dedico-me ativamente à atualização constante dos meus conhecimentos e habilidades. 
             Acredito que a tecnologia avança rapidamente, e por isso, mantenho um ritmo de aprendizado ininterrupto para garantir que minhas competências estejam sempre alinhadas com as exigências e inovações do mercado de trabalho.
             Minha dedicação em estudar continuamente não é apenas uma obrigação, mas uma motivação intrínseca para me qualificar e contribuir de forma significativa para os desafios e projetos das empresas. 
             Estou sempre em busca de novas ferramentas, metodologias e tendências para aplicar na prática e agregar valor.

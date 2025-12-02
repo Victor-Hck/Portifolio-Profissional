@@ -7,41 +7,131 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
+      title: "Calculadora de IMC - (em breve)",
       description:
         "Plataforma completa de e-commerce com carrinho de compras, pagamentos e painel administrativo.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop",
-      tags: ["Next.js", "TypeScript", "Stripe"],
+    //   image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=400&fit=crop",
+    //   tags: ["Next.js", "TypeScript", "React"],
       demo: "#",
       github: "#",
     },
     {
       id: 2,
-      title: "Dashboard Analytics",
+      title: "Jogo de Memória - (em breve)",
       description:
         "Dashboard interativo com gráficos e análises em tempo real para visualização de dados.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      tags: ["React", "Chart.js", "Node.js"],
+    //   image: "https://images.unsplash.com/photo-1606813907291-d86efa9b94b4?w=600&h=400&fit=crop",
+    //   tags: ["React", "Chart.js", "Node.js"],
       demo: "#",
       github: "#",
     },
     {
       id: 3,
-      title: "Social Network",
+      title: "Clone do WhatsApp - (em breve)",
       description:
         "Rede social com feed de notícias, sistema de amizades e chat em tempo real.",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
-      tags: ["Next.js", "Socket.io", "MongoDB"],
+    //   image: "https://images.unsplash.com/photo-1588702547919-26089e690ecc?w=600&h=400&fit=crop",
+    //   tags: ["Next.js", "Socket.io", "MongoDB"],
       demo: "#",
       github: "#",
     },
     {
       id: 4,
-      title: "Task Management App",
+      title: "Lista de Tarefas - (em breve)",
       description:
         "Aplicativo de gerenciamento de tarefas com recursos de colaboração em equipe.",
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
-      tags: ["React", "Firebase", "TailwindCSS"],
+    //   image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=600&h=400&fit=crop",
+    //   tags: ["React", "Firebase", "TailwindCSS"],
+      demo: "#",
+      github: "#",
+    },
+    {
+      id: 5,
+      title: "Sistema de Finanças Pessoais - (em breve)",
+      description:
+        "Gerencie despesas, receitas, gráficos e metas financeiras com total controle.",
+    //   image: "https://images.unsplash.com/photo-1586880244406-556ebe35f282?w=600&h=400&fit=crop",
+    //   tags: ["Next.js", "Prisma", "PostgreSQL"],
+      demo: "#",
+      github: "#",
+    },
+    {
+      id: 6,
+      title: "Galeria de Fotos - (em breve)",
+      description:
+        "Galeria elegante com filtros, animações e visualização em tela cheia.",
+    //   image: "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?w=600&h=400&fit=crop",
+    //   tags: ["React", "Framer Motion", "CSS Grid"],
+      demo: "#",
+      github: "#",
+    },
+    {
+      id: 7,
+      title: "Jogo RPG - (em breve)",
+      description:
+        "Jogo de RPG simples com combate, inventário e progressão de personagem.",
+    //   image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop",
+    //   tags: ["JavaScript", "Canvas", "HTML"],
+      demo: "#",
+      github: "#",
+    },
+    {
+      id: 8,
+      title: "Formulário Multi-etapas - (em breve)",
+      description:
+        "Formulário moderno dividido por etapas com validação inteligente.",
+    //   image: "https://images.unsplash.com/photo-1588702547866-b5c9a45398f8?w=600&h=400&fit=crop",
+    //   tags: ["React", "Zod", "TailwindCSS"],
+      demo: "#",
+      github: "#",
+    },
+    {
+      id: 9,
+      title: "Clone do Twitter - (em breve)",
+      description:
+        "Aplicação social com tweets, likes, comentários e autenticação.",
+    //   image: "https://images.unsplash.com/photo-1611605698323-b1e99cfd37e4?w=600&h=400&fit=crop",
+    //   tags: ["Next.js", "Supabase", "TailwindCSS"],
+      demo: "#",
+      github: "#",
+    },
+    {
+      id: 10,
+      title: "Pizzaria - (em breve)",
+      description:
+        "Sistema de pedidos completo com carrinho, categorias, adicionais e painel.",
+    //   image: "https://images.unsplash.com/photo-1604382354938-07c5d9983bd3?w=600&h=400&fit=crop",
+    //   tags: ["React", "Node.js", "MongoDB"],
+      demo: "#",
+      github: "#",
+    },
+    {
+      id: 11,
+      title: "Store - Frontend - (em breve)",
+      description:
+        "Loja completa com grid de produtos, filtro, busca e carrinho local.",
+    //   image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=400&fit=crop",
+    //   tags: ["Next.js", "Stripe", "TailwindCSS"],
+      demo: "#",
+      github: "#",
+    },
+    {
+      id: 12,
+      title: "Dashboard de RPG (Runway Fantasy Style) - (em breve)",
+      description:
+        "Dashboard estilizado com elementos de fantasia e cards animados.",
+    //   image: "https://images.unsplash.com/photo-1618172193763-7dfeeebf7bfc?w=600&h=400&fit=crop",
+    //   tags: ["React", "Framer Motion", "API"],
+      demo: "#",
+      github: "#",
+    },
+    {
+      id: 13,
+      title: "Loja Virtual Minimalista (com Admin Panel) - (em breve)",
+      description:
+        "E-commerce minimalista com painel administrativo para gestão completa.",
+    //   image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+    //   tags: ["Next.js", "Prisma", "TailwindCSS"],
       demo: "#",
       github: "#",
     },
@@ -51,9 +141,7 @@ export default function Projects() {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
+      transition: { staggerChildren: 0.2 },
     },
   };
 
@@ -99,6 +187,7 @@ export default function Projects() {
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   {project.description}
                 </p>
+                {/* 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
                     <span
@@ -109,6 +198,7 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
+                      */}
                 <div className="flex gap-4">
                   <a
                     href={project.demo}
