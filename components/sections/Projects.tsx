@@ -9,7 +9,7 @@ export default function Projects() {
       id: 1,
       title: "Calculadora de IMC - (em breve)",
       description:
-        "Plataforma completa de e-commerce com carrinho de compras, pagamentos e painel administrativo.",
+        "Ferramenta simples e intuitiva para calcular o Índice de Massa Corporal e analisar sua categoria de saúde.",
     //   image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=400&fit=crop",
     //   tags: ["Next.js", "TypeScript", "React"],
       demo: "#",
@@ -19,7 +19,7 @@ export default function Projects() {
       id: 2,
       title: "Jogo de Memória - (em breve)",
       description:
-        "Dashboard interativo com gráficos e análises em tempo real para visualização de dados.",
+        "Jogo interativo para treinar memória visual combinando cartas iguais dentro do menor tempo possível.",
     //   image: "https://images.unsplash.com/photo-1606813907291-d86efa9b94b4?w=600&h=400&fit=crop",
     //   tags: ["React", "Chart.js", "Node.js"],
       demo: "#",
