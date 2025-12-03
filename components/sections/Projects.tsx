@@ -7,23 +7,23 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Calculadora de IMC - (em breve)",
+      title: "Calculadora de IMC",
       description:
         "Ferramenta simples e intuitiva para calcular o Índice de Massa Corporal e analisar sua categoria de saúde.",
-    //   image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=400&fit=crop",
+      image: "./calc-imc.png",
     //   tags: ["Next.js", "TypeScript", "React"],
       demo: "#",
-      github: "#",
+      github: "https://github.com/Victor-Hck/react-calc-imc",
     },
     {
       id: 2,
-      title: "Jogo de Memória - (em breve)",
+      title: "Jogo de Memória",
       description:
         "Jogo interativo para treinar memória visual combinando cartas iguais dentro do menor tempo possível.",
-    //   image: "https://images.unsplash.com/photo-1606813907291-d86efa9b94b4?w=600&h=400&fit=crop",
+      image: "./memory.png",
     //   tags: ["React", "Chart.js", "Node.js"],
       demo: "#",
-      github: "#",
+      github: "https://github.com/Victor-Hck/react-memoria",
     },
     {
       id: 3,
@@ -57,13 +57,13 @@ export default function Projects() {
     },
     {
       id: 6,
-      title: "Galeria de Fotos - (em breve)",
+      title: "Galeria de Fotos",
       description:
         "Galeria elegante com filtros, animações e visualização em tela cheia.",
-    //   image: "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?w=600&h=400&fit=crop",
+      image: "./gallery.png",
     //   tags: ["React", "Framer Motion", "CSS Grid"],
       demo: "#",
-      github: "#",
+      github: "https://github.com/Victor-Hck/gallery-react",
     },
     {
       id: 7,
@@ -175,7 +175,7 @@ export default function Projects() {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                //   src={project.image}
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -200,6 +200,7 @@ export default function Projects() {
                 </div>
                       */}
                 <div className="flex gap-4">
+                    {/* 
                   <a
                     href={project.demo}
                     className="flex items-center gap-2 px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
@@ -207,9 +208,10 @@ export default function Projects() {
                     <ExternalLink size={18} />
                     Demo
                   </a>
+                    */}
                   <a
                     href={project.github}
-                    className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800 transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800 transition-colors" target="_blank"
                   >
                     <Github size={18} />
                     GitHub
