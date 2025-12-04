@@ -23,7 +23,7 @@ import {
   SiGnubash,
   SiZod,
   SiReactquery,
-  
+  SiPostman,
 } from "react-icons/si";
 
 const skillCategories = [
@@ -49,7 +49,7 @@ const skillCategories = [
       { name: "PHP", icon: SiPhp, color: "#00FFFF" },
       { name: "MySql", icon: SiMysql, color: "#ffffff" },
       { name: "SQLite", icon: SiSqlite, color: "#000000" },
-      { name: "C++", icon: SiCplusplus, color: "#fff"},
+      { name: "C++", icon: SiCplusplus, color: "#00FFFF"},
       
     ],
   },
@@ -58,8 +58,9 @@ const skillCategories = [
     skills: [
       { name: "Git", icon: SiGit, color: "#F05032" },
       { name: "GitHub", icon: SiGithub, color: "#000000" },
-      { name: "React Query", icon: SiReactquery, color: "#fff"},
-      { name: "Zod", icon: SiZod, color: "#fff"}
+      { name: "React Query", icon: SiReactquery, color: "#000000"},
+      { name: "Zod", icon: SiZod, color: "#000000"},
+      { name: "PostMan", icon: SiPostman, color: "#000000"}
     //   { name: "Docker", icon: SiDocker, color: "#2496ED" },
     //   { name: "Figma", icon: SiFigma, color: "#F24E1E" },
     ],
