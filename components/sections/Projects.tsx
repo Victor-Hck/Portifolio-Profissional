@@ -7,10 +7,10 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Calculadora de IMC",
+      title: "API Contatos",
       description:
-        "Ferramenta simples e intuitiva para calcular o Índice de Massa Corporal e analisar sua categoria de saúde.",
-      image: "./calc-imc.png",
+        "API simples em Node.js para gerenciar contatos (criar, listar e excluir).",
+      image: "./api.png",
     //   tags: ["Next.js", "TypeScript", "React"],
       demo: "#",
       github: "https://github.com/Victor-Hck/react-calc-imc",
@@ -37,13 +37,13 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: "Lista de Tarefas - (em breve)",
+      title: "Lista de Tarefas",
       description:
         "Aplicativo de gerenciamento de tarefas com recursos de colaboração em equipe.",
-    //   image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=600&h=400&fit=crop",
+      image: "/lista.png",
     //   tags: ["React", "Firebase", "TailwindCSS"],
       demo: "#",
-      github: "#",
+      github: "https://github.com/Victor-Hck/TODO-LIST",
     },
     {
       id: 5,
@@ -67,23 +67,23 @@ export default function Projects() {
     },
     {
       id: 7,
-      title: "Jogo RPG - (em breve)",
+      title: "Jogo RPG",
       description:
-        "Jogo de RPG simples com combate, inventário e progressão de personagem.",
-    //   image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop",
+        "Jogo de RPG simples.",
+      image: "/rpg.png",
     //   tags: ["JavaScript", "Canvas", "HTML"],
       demo: "#",
-      github: "#",
+      github: "https://github.com/Victor-Hck/RPG-REACT",
     },
     {
       id: 8,
-      title: "Formulário Multi-etapas - (em breve)",
+      title: "Formulário Multi-etapas",
       description:
         "Formulário moderno dividido por etapas com validação inteligente.",
-    //   image: "https://images.unsplash.com/photo-1588702547866-b5c9a45398f8?w=600&h=400&fit=crop",
+      image: "/formulario.png",
     //   tags: ["React", "Zod", "TailwindCSS"],
       demo: "#",
-      github: "#",
+      github: "https://github.com/Victor-Hck/MULTIFORM-REACT",
     },
     {
       id: 9,
@@ -134,6 +134,16 @@ export default function Projects() {
     //   tags: ["Next.js", "Prisma", "TailwindCSS"],
       demo: "#",
       github: "#",
+    },
+    {
+      id: 1,
+      title: "Calculadora de IMC",
+      description:
+        "Ferramenta simples e intuitiva para calcular o Índice de Massa Corporal e analisar sua categoria de saúde.",
+      image: "./calc-imc.png",
+    //   tags: ["Next.js", "TypeScript", "React"],
+      demo: "#",
+      github: "https://github.com/Victor-Hck/react-calc-imc",
     },
   ];
 
