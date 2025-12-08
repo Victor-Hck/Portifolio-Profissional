@@ -16,6 +16,16 @@ export default function Projects() {
       github: "https://github.com/Victor-Hck/react-calc-imc",
     },
     {
+      id: 15,
+      title: "Loja - Sushi - (Em produção)",
+      description:
+        "Loja de vendas de Sushi.",
+    //   image: "./api.png",
+    //   tags: ["Next.js", "TypeScript", "React"],
+      demo: "#",
+      github: "https://github.com/Victor-Hck/Loja---Sushi",
+    },
+    {
       id: 2,
       title: "Jogo de Memória",
       description:
@@ -136,7 +146,7 @@ export default function Projects() {
       github: "#",
     },
     {
-      id: 1,
+      id: 14,
       title: "Calculadora de IMC",
       description:
         "Ferramenta simples e intuitiva para calcular o Índice de Massa Corporal e analisar sua categoria de saúde.",
