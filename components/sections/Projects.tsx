@@ -17,10 +17,10 @@ export default function Projects() {
     },
     {
       id: 15,
-      title: "Loja - Sushi - (Em produção)",
+      title: "Loja - Sushi",
       description:
         "Loja de vendas de Sushi.",
-    //   image: "./api.png",
+      image: "./sushi.png",
     //   tags: ["Next.js", "TypeScript", "React"],
       demo: "#",
       github: "https://github.com/Victor-Hck/Loja---Sushi",

@@ -24,6 +24,9 @@ import {
   SiZod,
   SiReactquery,
   SiPostman,
+  SiReacthookform,
+  SiShadcnui,
+
 } from "react-icons/si";
 
 const skillCategories = [
@@ -60,7 +63,9 @@ const skillCategories = [
       { name: "GitHub", icon: SiGithub, color: "#000000" },
       { name: "React Query", icon: SiReactquery, color: "#000000"},
       { name: "Zod", icon: SiZod, color: "#000000"},
-      { name: "PostMan", icon: SiPostman, color: "#000000"}
+      { name: "PostMan", icon: SiPostman, color: "#000000"},
+      { name: "React Hook Form", icon: SiReacthookform, color: "#000000"},
+      { name: "Shadcn-ui", icon: SiShadcnui, color: "#000000"},
     //   { name: "Docker", icon: SiDocker, color: "#2496ED" },
     //   { name: "Figma", icon: SiFigma, color: "#F24E1E" },
     ],
